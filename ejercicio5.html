@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Ejercicio sobre shapes">
+    <meta name="author" content="Paola Civeira">
+    <title>Ejercicio 5. </title>
+    <style media="screen">
+      .container {
+        margin: 0 auto;
+        width: 80%;
+      }
+      #gato1 {
+        width: 400px;
+        float:left;
+        shape-outside: circle(34%);
+      }
+      #gato2 {
+        width: 400px;
+        float: right;
+        shape-outside: polygon(26.25% 62px, 31.43% 16.29%, 31.3% 10.9%, 40.67% 17.78%, 46.73% 26.16%, 47.00% 78.55%, 40.12% 83.54%, 28.46% 90.88%, 18.5% 91.51%, 15.34% 86.34%, 22.97% 80.97%, 27.98% 72.58%, 17.22% 71.62%, 21.25% 61.17%, 84px 42.77%);
+      }
+      #gato3 {
+        width: 400px;
+        float:left;
+        clip-path: ellipse(109px 71px at 50.50% 42.27%);
+        shape-outside: ellipse(109px 71px at 50.50% 42.27%);
+      }
+      #gato4 {
+        width: 200px;
+        float:left;
+        shape-outside: url(images/gato1.png);
+      }
+      #gato5 {
+        width: 200px;
+        float:left;
+        clip-path: url(#myClip);
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h1>Shape outside circle.</h1>
+        <img id="gato1"src="images/gato1.jpg" alt="Gatito">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section>
+        <h1>Shape outside polygon.</h1>
+        <img id="gato2"src="images/gato1.jpg" alt="Gatito">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+      <section>
+        <h1>Shape outside and clip-path ellipse.</h1>
+        <img id="gato3"src="images/gato1.jpg" alt="Gatito">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+      </section>
+      <section>
+        <h1>Shape outside png.</h1>
+        <img id="gato4"src="images/gato1.png" alt="Gatito">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+          <section>
+            <h1>Clip-path svg.</h1>
+            <img id="gato5"src="images/gato1.jpg" alt="Gatito">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <svg width="0" height "0">
+                <defs>
+                  <clipPath id="myClip">
+                    <path class="st0" d="M22.1,35.8c0,0,10.3-17.4,34.5-19c24.2-1.6,52.8,4.3,52.8,16.3S75.1,41,68.7,64.7c-6.4,23.7,2.3,29.2,6.8,29.4
+                      c4.5,0.2-32.6,36-49.4,8s39.3-36.7,24.3-47.5s-28.9,5.7-35.2-6.8C16.1,42.3,22.1,35.8,22.1,35.8z"/>
+                  </clipPath>
+                </defs>
+              </svg>
+          </section>
+    </div>
+
+  </body>
+</html>
