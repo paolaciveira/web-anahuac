@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
-body {
+
+html, body {
+  margin: 0;
   background-image: url(../images/fondo.jpg);
   background-repeat: no-repeat;
   background-position: center;
   max-width: 100%;
   height: auto;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
 .container {
